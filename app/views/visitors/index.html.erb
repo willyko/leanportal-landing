@@ -1,17 +1,35 @@
 <!-- Full Width Image Header with Logo -->
 <!-- Image backgrounds are set within the full-width-pics.css file. -->
+<!--
 <header class="image-bg-fluid-height">
     <img class="img-responsive img-center" src="http://placehold.it/200x200&text=Logo" alt="">
 </header>
-
+-->
 <!-- Content Section -->
 <section>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="section-heading">Section Heading</h1>
-                <p class="lead section-lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+                <h1 class="section-heading">Welcome to LeanPortal</h1>
+                <p class="lead section-lead">Please enter the following</p>
+                <p class="section-paragraph">
+                  My name is <input type="text" placeholder="Bob" id="name_i">
+                  <br>
+                  I went to <input type="text" placeholder="University" id="school_i">
+                  <br>
+                  The last event I went to is <input type="text" placeholder="Westcoast Conference" id="event_went">
+                  <br>
+                  The next event I want to go is <input type="text" placeholder="nwHack" id="event_next">
+                  <br>
+                  Events I might be interested in includes <input type="text" placeholder="Consulting Competition" id="event_int">
+                  <br>
+                  My favourite event was <input type="text" placeholder="PVVC UBC" id="event_fav">
+                  <br>
+                  Some improvements I think the events need  are <input type="text" placeholder="Feedback!" id="comment"> 
+                  <br>
+                  Please keep me updated regarding this project at <input type="text" placeholder="abc@gmail.com" id="email"> (optional)
+                </p>
+                <button type="submit" value="submit"> submit </button>
             </div>
         </div>
     </div>
@@ -19,32 +37,51 @@
 
 <!-- Fixed Height Image Aside -->
 <!-- Image backgrounds are set within the full-width-pics.css file. -->
-<aside class="image-bg-fixed-height"></aside>
-
-<!-- Content Section -->
-<section>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="section-heading">Section Heading</h1>
-                <p class="lead section-lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
-            </div>
-        </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.container -->
-</section>
+<!-- <aside class="image-bg-fixed-height"></aside> -->
 
 <!-- Footer -->
 <footer>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <p>Copyright &copy; Your Website 2014</p>
+                <p>Copyright &copy; Swapifi Technologies 2016</p>
             </div>
         </div>
         <!-- /.row -->
     </div>
     <!-- /.container -->
 </footer>
+
+<script>
+$(document).ready(function() {
+
+  $("button").click(function () {
+    var name = $("#name_i").val();
+    var school = $("#school_i").val();
+    var event_went = $("#event_went").val();
+    var event_next = $("#event_next").val();
+    var event_int = $("#events_int").val();
+    var event_fav = $("#event_fav").val();
+    var email = $("#email").val();
+    var comment = $("#comment").val();
+    $.ajax({
+      type: "POST",
+      url: "visitor",
+      data: { visitor:
+              { name: name,
+                school: school,
+                event_last: event_went,
+                event_interested: event_int,
+                event_next: event_next,
+                event_favourite: event_fav,
+                email: email,
+                comments: comment
+              }
+            },
+      success: null,
+      dataType: 'json'
+    });
+  });
+});
+</script>
+
