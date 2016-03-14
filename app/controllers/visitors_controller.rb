@@ -1,5 +1,7 @@
 class VisitorsController < ApplicationController
+  skip_before_action :verify_authenticity_token
   def index
+    @visitor = Visitor.new
   end
 
   def new
@@ -10,13 +12,16 @@ class VisitorsController < ApplicationController
     respond_to do |format|
       if @visitor.save
         format.html {
-         redirect_to #index,
          flash[:notice] = "Thank you for sharing"
+         render :index
+        }
+        format.json {
+          render json: @visitor, status: :created, location: @visitor
         }
       else
         format.html {
-         redirect_to #index,
-         flash[:alert] = "error"
+         flash[:alert] = "Error submitting"
+         render :index
         }
       end
     end

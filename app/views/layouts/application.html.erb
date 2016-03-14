@@ -13,7 +13,9 @@
       <%= render 'layouts/navigation' %>
     </header>
       <%= render 'layouts/messages' %>
+      <div class="notice">
       <%= flash[:notice] || flash[:alert] %>
+    </div>
       <%= yield %>
   </body>
 </html>
