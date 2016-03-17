@@ -1,0 +1,18 @@
+<%= form_for @visitor, url: {action: "create"} do |f| %>
+  My name is <%= f.text_field :name, :placeholder => "Edwin Tsang" %>
+  <br>
+   I went to <%= f.text_field :school %>
+  <br>
+   The last event I went to is <%= f.text_field :event_last %>
+  <br>
+   The next event I want to go is <%= f.text_field :event_next %>
+  <br>
+   Events I might be interested in includes <%= f.text_field :event_interested %>
+  <br>
+  My favourite event was <%= f.text_field :event_favourite %>
+  <br>
+   Some improvements I think the events need  are <%= f.text_field :comments %>
+   <br>
+    Please keep me updated regarding this project at <%= f.text_field :email %>
+  <%= f.submit "Submit" %>>
+<% end %>
