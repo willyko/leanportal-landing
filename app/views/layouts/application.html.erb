@@ -5,17 +5,16 @@
     <title><%= content_for?(:title) ? yield(:title) : "My Application" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "My Application" %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Indie+Flower' %>
+    <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Roboto+Condensed' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
   <body>
     <header>
-      <%= render 'layouts/navigation' %>
+      <%#= render 'layouts/navigation' %>
     </header>
       <%= render 'layouts/messages' %>
-      <div class="notice">
-      <%= flash[:notice] || flash[:alert] %>
-    </div>
       <%= yield %>
   </body>
 </html>

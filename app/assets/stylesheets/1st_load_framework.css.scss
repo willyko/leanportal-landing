@@ -40,26 +40,44 @@ input {
   @extend .btn-primary;
   @extend .btn-lg;
   }
-// apply styles to HTML elements
-// to make views framework-neutral
-main {
-  @extend .container;
-  background-color: #eee;
-  padding-bottom: 80px;
-  width: 100%;
-  margin-top: 51px; // accommodate the navbar
-  }
+
 section {
   @extend .row;
-  margin-top: 20px;
-  background-color: lightblue;
-  text-align: center;
+  background-color: #e0e0e0;
+  color: white;
+  height: 770px;
+  background-color: #4a90e2;
+  position: relative;
   }
 
-.section-paragraph {
-  font-size:1.5em;
+h1 {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 100%;
+  text-align: center;
 }
 
-.notice {
-  text-align: center;
+footer {
+  background-color: lightblue;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto Condensed', serif;
+}
+
+p, form {
+  font-family: 'Indie Flower', cursive;
+}
+
+h1 {
+  font-size: 6.0em;
+}
+
+h2 {
+  font-size: 4.0em;
+}
+
+.alert {
+  margin-bottom: 0;
 }
