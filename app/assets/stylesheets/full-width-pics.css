@@ -15,12 +15,12 @@
 
 .image-bg-fluid-height {
   background-color: #0099ff;
-  background: url('http://www.freeimageslive.co.uk/files/images010/engineering.jpg') no-repeat center center scroll;
+  background: url('background1.jpg') no-repeat center center scroll;
   padding: 100px 0;
     }
 
 .image-bg-fixed-height {
-  background: url('http://www.freeimageslive.co.uk/files/images010/engineering.jpg') no-repeat center center scroll;
+  background: url('background1.jpg') no-repeat center center scroll;
     height: 450px;
 }
 
