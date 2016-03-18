@@ -15,8 +15,10 @@ class VisitorsController < ApplicationController
          flash[:notice] = "Thank you for sharing"
          render :index
         }
-        format.json {
-          render json: @visitor, status: :created, location: @visitor
+        format.js {
+          flash.now[:notice] = "Thank you for sharing!!!!"
+          render action: 'create'
+          #render json: @visitor, status: :created, location: @visitor
         }
       else
         format.html {
