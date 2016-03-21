@@ -53,17 +53,24 @@ section {
 h1 {
   position: absolute;
   left: 0;
-  top: 45%;
+  top: 40%;
   width: 100%;
   text-align: center;
 }
 
+h3 {
+  position: absolute;
+  left: 0;
+  top: 60%;
+  width: 100%;
+  text-align: center;
+}
 footer {
   background-color: lightblue;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Roboto Condensed', serif;
+  font-family: 'Hindi Siliguri', sans-serif;
 }
 
 p, form {
