@@ -2,11 +2,12 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Welcome to LeanPortal" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Welcome to Leanportal" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "An app for curated conferences and networking events information" %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Indie+Flower' %>
     <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Hind+Siliguri'  %>
+    <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Sumana'  %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>

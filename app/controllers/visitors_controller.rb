@@ -32,7 +32,7 @@ class VisitorsController < ApplicationController
 
   private
   def visitor_params
-    params.require(:visitor).permit(:name,:event_last,:event_interested,:email,:school, :event_next, :event_favourite, :comments)
+    params.require(:visitor).permit(:name,:event_last,:email,:school, :event_next, :event_favourite, :comments)
   end
 
 end
