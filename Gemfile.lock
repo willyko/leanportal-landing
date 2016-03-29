@@ -159,6 +159,9 @@ GEM
     quiet_assets (1.1.0)
       railties (>= 3.1, < 5.0)
     rack (1.6.4)
+    rack-google-analytics (1.2.0)
+      actionpack
+      activesupport
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.5.2)
@@ -267,6 +270,7 @@ DEPENDENCIES
   puma
   pundit
   quiet_assets
+  rack-google-analytics
   rails (= 4.2.5.2)
   rails_12factor
   rails_layout

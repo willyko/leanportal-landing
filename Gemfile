@@ -23,6 +23,8 @@ gem 'activeadmin', '~> 1.0.0.pre2'
 gem 'cancan'
 gem 'draper'
 gem 'pundit'
+#google analytics
+gem 'rack-google-analytics'
 
 group :development do
   gem 'better_errors'
