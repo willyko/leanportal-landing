@@ -1,30 +1,38 @@
 <!-- Full Width Image Header with Logo -->
 <!-- Image backgrounds are set within the full-width-pics.css file. -->
-<!--
-<header class="image-bg-fluid-height">
-    <img class="img-responsive img-center" src="http://placehold.it/200x200&text=Logo" alt="">
-</header>
--->
 <section id="home" class='image-bg-fluid-height'>
-        <h1 class="section-heading"> LeanPortal Coming Soon! </h1>
-        <h3 class="section-paragraph"> Please help us out by filling out the quick survey below! <br> We will pick two winners for a $50 starbucks gift card if you put in your email. </h3>
+  <div class="container-fluid">
+    <div class='row-fluid'>
+      <div class="centering text-center">
+        <h1> LeanPortal Coming Soon! </h1> <br>
+          <div class='lead'>
+          Please help us out by filling out the quick survey below!
+
+          <br>
+          We will pick two winners for a $50 starbucks gift card if you put in your email.
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- Content Section -->
 <section id="survey">
-    <div class="container">
-        <div class="row">
+    <div class="container-fluid">
+        <div class="row-fluid">
           <div class='spinner'>
             <div class='dot1'></div>
             <div class='dot2'></div>
            </div>
             <div class="col-lg-12">
-              <h2 class="section-heading"> Survey </h2>
-              <h4> Leanportal is looking to learn more about the events students attend in terms of conferences/events </h4>
-                <p class="lead section-lead">Please enter the following.  Leave blank if no answer</p>
-                <div class="section-paragraph">
+              <div class='centering text-center'>
+              <h1> Survey </h1>
+              <p> Leanportal is looking to learn more about the events students attend in terms of conferences/events <br> 
+                Please enter the following.  Leave blank if no answer<p>
+                <div class="survey-form">
                   <%= render "form" %>
                 </div>
+              </div>
             </div>
         </div>
     </div>

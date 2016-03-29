@@ -15,11 +15,12 @@
 
 .image-bg-fluid-height {
   background-color: #0099ff;
-  background: url('https://images.unsplash.com/photo-1453282716202-de94e528067c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=ac9b38e57a8a0724058cdcbe6a687aa8') no-repeat center center scroll;
-}
+  background: asset_path('background.jpg') no-repeat center center scroll;
+  padding: 100px 0;
+    }
 
 .image-bg-fixed-height {
-  background: url('background.jpg') no-repeat center center scroll;
+  background: asset_path('background.jpg') no-repeat center center scroll;
     height: 450px;
 }
 
@@ -27,4 +28,26 @@
   margin: 0 auto;
 }
 
+section {
+    padding: 75px 0;
+}
 
+.section-lead {
+    margin: 30px 0;
+}
+
+.section-paragraph {
+    margin: 30px 0;
+    font-size: 1.5em;
+}
+
+@media(max-width:768px) {
+    section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+   .section-heading {
+        font-size: 2em;
+    }
+}
