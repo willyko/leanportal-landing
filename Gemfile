@@ -17,6 +17,13 @@ gem 'bootstrap-sass'
 gem 'figaro'
 gem 'pg'
 gem 'simple_form'
+#active admin
+gem 'devise'
+gem 'activeadmin', '~> 1.0.0.pre2'
+gem 'cancan'
+gem 'draper'
+gem 'pundit'
+
 group :development do
   gem 'better_errors'
   gem 'hub', :require=>nil
