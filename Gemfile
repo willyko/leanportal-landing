@@ -25,6 +25,8 @@ gem 'draper'
 gem 'pundit'
 #google analytics
 gem 'rack-google-analytics'
+#shareable
+gem 'social-share-button'
 
 group :development do
   gem 'better_errors'

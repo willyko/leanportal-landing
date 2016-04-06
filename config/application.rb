@@ -24,6 +24,6 @@ module LeanportalLanding
     config.active_record.raise_in_transactional_callbacks = true
     config.serve_static_files =true
 
-    config.middleware.use Rack::GoogleAnalytics, :tracker => 'UA-74446456-1'
+    config.middleware.use Rack::GoogleAnalytics, :tracker => ENV["google_analytics_key"]
   end
 end

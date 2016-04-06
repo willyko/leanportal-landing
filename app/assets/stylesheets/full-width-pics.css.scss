@@ -4,8 +4,8 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-.image-bg-fluid-height,
-.image-bg-fixed-height {
+.image-bg-home,
+.image-bg-thankyou {
     text-align: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -13,14 +13,14 @@
     -o-background-size: cover;
 }
 
-.image-bg-fluid-height {
+.image-bg-home {
   background-color: #0099ff;
   background: url('https://images.unsplash.com/photo-1453282716202-de94e528067c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=ac9b38e57a8a0724058cdcbe6a687aa8') no-repeat center center scroll;
 }
 
-.image-bg-fixed-height {
-  background: url('background.jpg') no-repeat center center scroll;
-    height: 450px;
+.image-bg-thankyou {
+  background-color: #0099ff;
+  background: image-url('thankyou2.jpg') no-repeat center center scroll;
 }
 
 .img-center {

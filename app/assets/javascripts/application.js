@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require visitor
 //= require bootstrap-sprockets
+//= require social-share-button
 //= require_tree .

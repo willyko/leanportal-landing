@@ -3,7 +3,7 @@
 <section id="home" class='image-bg-home'>
   <div class="container-fluid">
     <div class='row-fluid'>
-      <div class="centering text-center">
+      <div class="centering ">
         <h1> Leanportal coming soon! </h1> <br>
           <div class='lead'>
             <span>
@@ -26,7 +26,7 @@
         <div class='dot2'></div>
       </div>
       <div class="col-lg-12">
-        <div class='centering text-center'>
+        <div class='text-center centering'>
           <h1> Survey </h1>
             <p> Leanportal is looking to learn more about the events students attend in terms of conferences/events <br> 
               Please enter the following.  Leave blank if no answer<p>

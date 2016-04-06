@@ -1,2 +1,4 @@
-$('.survey-form').append('<%= j render partial: "layouts/messages" %>');
-$('input:nth-child(16)').hide();
+//$('#survey-form').append('<%= j render partial: "layouts/messages" %>');
+$('#survey').fadeOut(600, function() {
+  $('#thankyou').fadeIn(600);
+});

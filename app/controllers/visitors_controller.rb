@@ -12,7 +12,7 @@ class VisitorsController < ApplicationController
     respond_to do |format|
       if @visitor.save
         format.html {
-         flash[:notice] = "Thank you for sharing"
+         #flash[:notice] = "Thank you for sharing"
          render :index
         }
         format.js {
@@ -22,8 +22,11 @@ class VisitorsController < ApplicationController
         }
       else
         format.html {
-         flash[:alert] = "Error submitting"
+         #flash[:alert] = "Error submitting"
          render :index
+        }
+        format.js {
+          render action: 'create'
         }
       end
     end

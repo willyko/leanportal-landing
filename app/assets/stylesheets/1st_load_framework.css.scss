@@ -8,6 +8,7 @@ img {
   margin: 0 auto;
 }
 
+
 #survey-form input {
   outline:none;
   background: none;
@@ -17,9 +18,12 @@ img {
   text-align: center;
 }
 
+#survey-form {
+  line-height: 40px;
+  font-size: 1.0em;
+}
+
 section {
-  @extend .row;
-  background-color: #e0e0e0;
   color: white;
   height: 100%;
   background-color: #4a90e2;
@@ -78,7 +82,21 @@ html, body {
   .lead {
     font-size: 2.0em;
   }
-  p, form {
+  p {
     font-size: 1.5em;
+  }
+  #survey-form {
+  line-height: 40px;
+  font-size: 1.2em;
+  }
+}
+
+@media (max-width: 400px) {
+  p {
+    font-size: 0.75em;
+  }
+  #survey-form {
+    line-height: normal;
+    font-size: 12px;
   }
 }
